@@ -1,0 +1,5 @@
+SELECT DISTINCT A.Auther_ID, A.First_Name, A.Last_Name
+FROM BOOKS B, SUBJECTS S, AUTHORS A
+INNER JOIN S ON B.Author_ID = "7311965"
+WHERE B.Subject_ID = S.Subject_ID
+ORDER BY A.Last_Name ASC, A.Author_ID ASC;
